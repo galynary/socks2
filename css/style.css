@@ -1,0 +1,145 @@
+:root {
+    --accent-color: #2196f3;
+    --primary-white-color: #fff;
+    --title-font-size: 16px;
+    --text-font-size: 14px;
+    --priamary-color: #212121;
+    --text-color: #757575;
+    --transion: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-font-size);
+    color: var(--accent-color);
+    justify-content: center;
+}
+.section {
+    padding: 94px 0px;
+}
+.link {
+    text-decoration: none;
+}
+address {
+    font-style: normal;
+}
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0px 15px;
+    /* outline: 2px solid rgb(228, 208, 208);*/
+}
+.header,
+.header-nav,
+.header-nav__menu,
+.header-nav__contacts {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+}
+/*--хедер--*/
+.header {
+    background-color: #977c7c;
+    border-bottom: 1px solid #ececec;
+}
+.header-nav {
+    display: flex;
+}
+
+.wrap__container {
+    width: 100%;
+    height: 100%;
+    }
+    .ci-slock__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .ci-slock-left__container {
+        position: relative;
+        max-width: 400px;
+        background-color: #eca4a4;
+    }
+    .open-left-container {
+        position: absolute;
+        left: 50px;
+        top: 28px;
+        padding: 20px;
+        border: none;
+        background: rgba(0,0,0,0);
+     
+        
+    }
+    .close-container {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        top:20px;
+        right: 20px;
+    }
+    .wrap__ci-slock-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     
+        gap: 20px;
+       padding: 100px 10px;
+    }
+    .ci-slock-text {
+        color:#212121;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .ci-slock-rigth__container {
+        width: 100%;
+        position: relative;
+        background-color: #524f4f;
+        height: 600px;
+    }
+    @media screen and (max-width: 768px) {
+        .ci-slock-left__container {
+    display: block;
+    }
+    .ci-slock-left__container--is-hidden {
+     display: none;
+       
+        visibility: hidden;
+       
+}
+    }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Студія</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oleo+Script&family=Poppins:wght@500&family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+         <link rel="stylesheet" href="css/style.css" />
+      
+    </head>
+    <body>
+        <!--хедер-->
+        <header class="header">
+            <div class="container">
+                <div class="header-nav">
+                    <a href="" class="logo header__logo link"
+                        >Web<span class="logo__logo-dark">Studio</span></a
+                    >
+                    <button class="open-left-container" data-open-container>
+                        <svg class="menu-icon"><use href="./images/menu.svg"></use></svg>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+        <!--студія-->
+        <div class="wrap__container">
+            <div class="syslog__container">
+              <div class="ci-slock-left__container ci-slock-left__container--is-hidden" data-container>
+                <button type ="button" class="close-container" data-menu-close aria-label="close-menu">
+                    <svg class="icon-close">
+                        <use class="icon-close" href ="./images/closed.svg"></use>
+                    </svg>
+                </button>
+                 <div class="wrap__ci-slock-text" >
+                   
+                  <p class="ci-slock-text">dashboard</p>
+                  <p class="ci-slock-text">messages</p>
+                 </div>
+              </div>
+              <div class="ci-slock-rigth__container"></div>
+
+              </div>
+          </div>
+        <!--подвал-->
+        <script src="./js/modal.js"></script>
+      </body>
+</html>
